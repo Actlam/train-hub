@@ -14,4 +14,4 @@ class Todo(models.Model):
     created_at = models.DateTimeField('日付', auto_now_add=True)
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
     def __str__(self):
-        return self.titile
+        return self.title
