@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo</title>
+</head>
+<body>
+    <h2>カテゴリー</h2>
+        <ul>
+            <a href="{% url 'todo:index' %">
+                <li>トップ</li>
+            </a>
+            {% for category in category_list %}
+            <a href="{% url 'todo:todo_category' category %">
+                <li>{{ category }}</li>
+            </a>
+            {% endfor %}
+        </ul>
+
+{% block content %}
+{% endblock %}
+
+
+</body>
+</html>
