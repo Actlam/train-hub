@@ -3,18 +3,19 @@ from .models import Todo, Category
 
 # 一覧表示
 def index(request):
-    todo = Todo.object.order_by('title')
+    todo = Todo.objects.order_by('title')
     return render(request, 'todo/index.html', {'todo': todo})
 
 # 削除する機能
-def delete(request, id):
+def delete(request,id):
     todo = get_object_or_404(Todo,pk=id)
     todo.delete()
     return redirect('todo:index')
 
 # カテゴリ
-def todo_category(request, Category):
+def todo_category(request, category):
     category = Category.objects.get(title=category)
     # カテゴリの絞り込み機能
-    todo = Todo.object.filter(category=category).order_by('title')
+    todo = Todo.objects.filter(category=category).order_by('title')
     return render(request, 'todo/index.html', {'todo': todo, 'category': category})
+
