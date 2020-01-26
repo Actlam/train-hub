@@ -1,0 +1,71 @@
+.Flexbox{
+    display: flex;
+    flex-direction: column;
+}
+.skyblue_blue{
+    display: flex;
+    flex-direction: row;
+}
+.skyblue{
+    height: 100px;
+    width: 20%;
+    background-color: skyblue;    
+}
+.blue{
+    height: 100px;
+    width: 20%;
+    background-color: blue;
+}
+.grey{
+    height: 300px;
+    width: 100%;
+    background-color: grey;
+    position: relative;
+}
+.grey_red{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+}
+.grey_orange{
+    background-color: orange;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    z-index: 2;
+}
+.pink{
+    height: 300px;
+    background-color: pink;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pink_Flexbox{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 2;
+    align-items: center;
+}
+.pink_Flexbox_lime{
+    background-color: lime;
+    height: 100px;
+    width: 100px;
+}
+.pink_Flexbox_green{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+.black{
+    height: 200px;
+    background-color: black;
+}
