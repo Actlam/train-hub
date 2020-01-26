@@ -1,0 +1,34 @@
+.Header
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: center
+    background-color: ghostwhite
+    &__item
+        @include font(black, 30px)
+        margin: 20px 30px 
+        z-index: 1
+        position: relative
+        padding: 15px 25px
+        border: none
+        background-color: ghostwhite
+        overflow: hidden
+        transition: color 0.4s ease-in-out
+        &::before 
+            content: ''
+            z-index: -1
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            background-color: cornflowerblue
+            transform-origin: center
+            transform: translate(-50%, -50%) scale(0, 0)
+            transition: transform 0.45s ease-in-out
+        &:hover 
+            cursor: pointer
+            color: white
+        &:hover::before 
+            transform: translate(-50%, -50%) scale(15, 15)
