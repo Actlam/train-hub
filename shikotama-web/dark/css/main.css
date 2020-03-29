@@ -41,7 +41,7 @@ hr {
     overflow: hidden;
     transition: color 0.4s ease-in-out; }
     .Header__item::before {
-      content: "";
+      content: "";0 o
       z-index: -1;
       position: absolute;
       top: 50%;
