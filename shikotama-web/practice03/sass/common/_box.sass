@@ -1,0 +1,12 @@
+.box
+    background-color: #303030
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__text
+        @include font(white, 30px)
+    &__text2
+        @include font(limegreen, 60px)
+        transition-duration: 0.5s
+    &:hover > &__text2
+        color: white

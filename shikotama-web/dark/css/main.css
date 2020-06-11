@@ -1,0 +1,200 @@
+html {
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+p {
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+hr {
+  border: 0;
+  margin: 0; }
+
+@font-face {
+  font-family: "ampersand";
+  src: url(../font/ampersand.ttf); }
+.Header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: ghostwhite; }
+  .Header__item {
+    font-family: "ampersand", "arial black", "sans-serif";
+    color: black;
+    font-size: 30px;
+    margin: 20px 30px;
+    z-index: 1;
+    position: relative;
+    padding: 15px 25px;
+    border: none;
+    background-color: ghostwhite;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out; }
+    .Header__item::before {
+      content: "";0 o
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: cornflowerblue;
+      transform-origin: center;
+      transform: translate(-50%, -50%) scale(0, 0);
+      transition: transform 0.45s ease-in-out; }
+    .Header__item:hover {
+      cursor: pointer;
+      color: white; }
+    .Header__item:hover::before {
+      transform: translate(-50%, -50%) scale(15, 15); }
+
+.Border--1 {
+  border-style: solid;
+  border-color: navy;
+  width: 100%;
+  border-width: 1px; }
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: lightsteelblue; }
+  .Footer__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: "ampersand", "arial black", "sans-serif";
+    color: white;
+    font-size: 20px;
+    background-color: #777777;
+    margin-top: 300px;
+    padding: 5px 0; }
+
+.TopImage {
+  width: 100%;
+  background-image: url("../img/na.jpg");
+  background-size: cover;
+  height: 100%; }
+
+.HeadingWindow {
+  width: 100%;
+  height: 100%;
+  background-color: #aaa;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.TopTitle {
+  position: absolute;
+  top: 40%; }
+  .TopTitle__textarea {
+    font-family: "ampersand", "arial black", "sans-serif";
+    color: aliceblue;
+    font-size: 75px; }
+
+.Topic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: ghostwhite; }
+  .Topic__title {
+    font-family: "ampersand", "arial black", "sans-serif";
+    color: cornflowerblue;
+    font-size: 60px;
+    margin: 50px; }
+
+.SvgContainer {
+  width: 100%;
+  height: 80px;
+  background-color: ghostwhite; }
+
+.Svg {
+  width: 100%; }
+
+.FloatPanel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: lightsteelblue; }
+  .FloatPanel__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px; }
+  .FloatPanel__image {
+    width: 300px;
+    height: 300px;
+    border: 2px solid midnightblue;
+    border-radius: 50%; }
+    .FloatPanel__image:hover {
+      opacity: 0.5; }
+  .FloatPanel__text {
+    margin: 20px;
+    font-family: "ampersand", "arial black", "sans-serif";
+    color: black;
+    font-size: 20px; }
+
+.BackGroundImage {
+  position: fixed;
+  z-index: -999;
+  background-image: url("../img/trace11.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%; }
+
+.TransparentArea {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .TransparentArea__text {
+    font-family: "ampersand", "arial black", "sans-serif";
+    color: white;
+    font-size: 60px; }
+
+.PhotoGallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: lightsteelblue; }
+  .PhotoGallery__title {
+    font-family: "ampersand", "arial black", "sans-serif";
+    color: white;
+    font-size: 60px;
+    margin: 100px; }
+  .PhotoGallery__panel {
+    width: 300px;
+    height: 300px;
+    transition: all 0.5s ease;
+    transform: scale(1); }
+    .PhotoGallery__panel:hover {
+      position: relative;
+      z-index: 1;
+      transform: scale(1.5); }
+
+.PanelContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+/*# sourceMappingURL=main.css.map */

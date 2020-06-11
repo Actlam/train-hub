@@ -1,0 +1,59 @@
+.header__title {
+  font-size: 15px;
+  text-align: center; }
+
+.god_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .god_area .god1 img {
+    margin: 10px;
+    width: 400px;
+    height: 280px; }
+  .god_area .god2 img {
+    margin: 10px;
+    width: 400px;
+    height: 280px; }
+  .god_area .vs_text {
+    font-size: 28px; }
+
+.fight_button {
+  align-items: center;
+  text-align: center;
+  maring: auto; }
+  .fight_button .button-17 {
+    position: relative;
+    display: inline-block;
+    padding: 0.4em 1.6em;
+    text-decoration: none;
+    user-select: none;
+    border-top: 1px solid #00b5ad;
+    border-bottom: 1px solid #00b5ad; }
+  .fight_button .content {
+    margin: 0;
+    font-size: 0.8em;
+    color: #00b5ad; }
+  .fight_button .left-line,
+  .fight_button .right-line {
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    height: 140%;
+    background: #00b5ad;
+    transition: 0.3s;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .fight_button .left-line {
+    left: 5%; }
+  .fight_button .right-line {
+    left: 95%; }
+  .fight_button .button-17:hover .left-line {
+    left: 0;
+    height: 100%; }
+  .fight_button .button-17:hover .right-line {
+    left: 0;
+    height: 100%; }
+
+/*# sourceMappingURL=main.css.map */
